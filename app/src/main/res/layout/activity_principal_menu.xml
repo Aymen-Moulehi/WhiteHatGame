@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PrincipalMenuActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="50dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/start"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="Start Now"
+                    app:iconGravity="textStart"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="4dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    app:icon="@drawable/ic_play"
+                    app:iconTint="@color/black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/players"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="Players"
+                    app:iconGravity="textStart"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="4dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    app:icon="@drawable/ic_players"
+                    app:iconTint="@color/black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/words"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="Words"
+                    app:iconGravity="textStart"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="4dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    app:icon="@drawable/ic_words"
+                    app:iconTint="@color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
